@@ -1,12 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
-project(EigenVectorization)
+project(AlignmentExample)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-march=native")
-
-find_package(Eigen3 REQUIRED)
-
-include_directories(${EIGEN3_INCLUDE_DIR})
 
 add_executable(unaligned_vectorization unaligned_vectorization.cpp)
 add_executable(aligned_vectorization aligned_vectorization.cpp)
