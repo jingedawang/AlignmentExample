@@ -53,5 +53,7 @@ int main() {
 
   std::cout << result << std::endl;
 
+  delete input1;
+  delete input2;
   return 0;
 }
